@@ -65,3 +65,16 @@ footer{
 
     }
 }
+
+.textField{
+    @include cornerBorder;
+    padding: 5px;
+    .textBackground{
+        padding: 10px;
+        background-image: url("../IMG/textGrid2x3.svg");
+        background-repeat: repeat;
+        p{
+            margin: 5px 20px;
+        }
+    }
+}
