@@ -8,12 +8,18 @@ nav{
     float:right;
     ul{
         direction: rtl;
+        list-style-type: none;
     }
 
     li{
         margin: 15px 0;
         width: fit-content;
         cursor: pointer;
+    }
+
+    a{
+        text-decoration: none;
+        color: $primeText;
         &:hover{
             color: $prime;
         }
