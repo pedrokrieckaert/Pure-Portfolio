@@ -1,8 +1,39 @@
 @import "Abstract/theme";
 @import "Abstract/font";
 
+nav{
+    position: sticky;
+    top: 20vh;
+    font-size: $h3;
+    ul{
+        direction: rtl;
+    }
+
+    li{
+        margin: 15px 0;
+        width: fit-content;
+        cursor: pointer;
+        &:hover{
+            color: $prime;
+        }
+    }
+}
+
+footer{
+    padding: 2em 8.8%;
+    background-color: $backLight;
+}
+
 .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px dashed $primeText;
     h3{
+        margin: 0;
         font-size: $h2;
+    }
+    p{
+        font-style: italic;
     }
 }

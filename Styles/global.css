@@ -26,32 +26,4 @@ h2 {
 p {
   font-size: 1.6rem;
 }
-
-nav {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 20vh;
-  font-size: 2.6rem;
-}
-
-nav ul {
-  direction: rtl;
-}
-
-nav li {
-  margin: 15px 0;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  cursor: pointer;
-}
-
-nav li:hover {
-  color: #bc3030;
-}
-
-footer {
-  padding: 2em 8.8%;
-  background-color: #303035;
-}
 /*# sourceMappingURL=global.css.map */
