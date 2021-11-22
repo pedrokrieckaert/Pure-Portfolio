@@ -41,7 +41,9 @@ footer{
 
 .subHeader{
     margin:15px 0;
+    min-width: 200px;
     width: fit-content;
+    text-align: center;
     
     h4{
         @include cornerBorder;
@@ -60,7 +62,7 @@ footer{
     }
     p{
         font-size: $h3;
-        padding: 1em 3em;
+        padding: 0.5em 2em;
         @include cornerBorder;
 
     }
@@ -68,13 +70,16 @@ footer{
 
 .textField{
     @include cornerBorder;
+    margin-bottom: 20px;
     padding: 5px;
+    width: 700px;
     .textBackground{
         padding: 10px;
         background-image: url("../IMG/textGrid2x3.svg");
         background-repeat: repeat;
         p{
             margin: 5px 20px;
+
         }
     }
 }
