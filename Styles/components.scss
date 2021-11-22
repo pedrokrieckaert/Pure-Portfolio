@@ -80,13 +80,13 @@ footer{
 }
 
 .skillsList{
-    margin-top: 20;
+    margin-top: 30px;
     padding: 0;
     list-style-type: none;
     
     li{
         @include cornerBorder;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         width: 300px;
     }
 
@@ -99,6 +99,16 @@ footer{
         width: var(--width);
         overflow: visible;
         background: $primeGradient;
+    }
+
+    .itemLevel{
+        float: right;
+        transform: translate(0, -16px);
+        display: var(--display);
+
+        &::after{
+            content: "tri";
+        }
     }
 
     p{
