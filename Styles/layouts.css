@@ -2,4 +2,41 @@
   background-image: url("../IMG/triGrid3.svg");
   background-repeat: no-repeat;
 }
+
+#skills .gridWrapper {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "tools hard soft lang" "list1   list2   list3   list4";
+  justify-items: center;
+}
+
+#skills .subHeader:nth-of-type(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: tools;
+}
+
+#skills .skillsList:nth-of-type(1) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: list1;
+}
+
+#skills .skillsList:nth-of-type(2) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: list2;
+}
+
+#skills .skillsList:nth-of-type(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: list3;
+}
+
+#skills .skillsList:nth-of-type(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: list4;
+}
 /*# sourceMappingURL=layouts.css.map */

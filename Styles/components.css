@@ -150,7 +150,6 @@ footer {
 
 .skillsList .itemBar {
   width: var(--width);
-  overflow: visible;
   background: -webkit-gradient(linear, left top, left bottom, from(#802121), color-stop(25%, #bc3030), color-stop(75%, #bc3030), to(#802121));
   background: linear-gradient(180deg, #802121 0%, #bc3030 25%, #bc3030 75%, #802121 100%);
 }
@@ -170,6 +169,5 @@ footer {
   margin: 0;
   width: 275px;
   padding: 10px 0 10px 25px;
-  font-size: 1.8rem;
 }
 /*# sourceMappingURL=components.css.map */

@@ -102,7 +102,6 @@ footer{
 
     .itemBar{
         width: var(--width);
-        overflow: visible;
         background: $primeGradient;
     }
 
@@ -120,6 +119,5 @@ footer{
         margin: 0;
         width: 275px;
         padding: 10px 0 10px 25px;
-        font-size: $h4;
     }
 }
