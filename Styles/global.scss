@@ -1,18 +1,5 @@
-//default theme
-$back: #222;
-$backLight: #303035;
-$prime: #bc3030;
-$primeText: #f2f2f2;
-$primeGradient: linear-gradient(180deg, #802121 0%, #bc3030 25%, #bc3030 75%, #802121 100%);
-
-//default typo
-$title: 6rem;
-$h1: 3.2rem;
-$h2: 3rem;
-$h3: 2.6rem;
-$h4: 1.8rem;
-$h5: 1.6rem;
-$h6: 1.4rem;
+@import "Abstract/theme";
+@import "Abstract/font";
 
 html{
     font-size: 62.5%;
