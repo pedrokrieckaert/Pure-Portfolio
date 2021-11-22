@@ -1,9 +1,12 @@
 //default theme
-$back: #333;
-$prime: #f00;
-$primeText: #fff;
+$back: #222;
+$backLight: #303035;
+$prime: #bc3030;
+$primeText: #f2f2f2;
+$primeGradient: linear-gradient(180deg, #802121 0%, #bc3030 25%, #bc3030 75%, #802121 100%);
 
 //default typo
+$title: 6rem;
 $h1: 3.2rem;
 $h2: 3rem;
 $h3: 2.6rem;
@@ -19,10 +22,46 @@ body{
     margin: 0;
     padding: 0;
     font: 400 $h4 1.5;
+    color: $primeText;
     background-color: $back;
 }
 
+section{
+    margin:0 8.8%;
+    height: 100vh;
+}
+
+h1{
+    font-size: $title;
+}
+
+h2{
+    font-size: $h1;
+}
+
 p{
-    color: $primeText;
     font-size: $h5;
+}
+
+nav{
+    position: sticky;
+    top: 20vh;
+    font-size: $h3;
+    ul{
+        direction: rtl;
+    }
+
+    li{
+        margin: 15px 0;
+        width: fit-content;
+        cursor: pointer;
+        &:hover{
+            color: $prime;
+        }
+    }
+}
+
+footer{
+    padding: 2em 8.8%;
+    background-color: $backLight;
 }

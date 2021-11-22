@@ -6,11 +6,52 @@ body {
   margin: 0;
   padding: 0;
   font: 400 1.8rem 1.5;
-  background-color: #333;
+  color: #f2f2f2;
+  background-color: #222;
+}
+
+section {
+  margin: 0 8.8%;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 3.2rem;
 }
 
 p {
-  color: #fff;
   font-size: 1.6rem;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20vh;
+  font-size: 2.6rem;
+}
+
+nav ul {
+  direction: rtl;
+}
+
+nav li {
+  margin: 15px 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+
+nav li:hover {
+  color: #bc3030;
+}
+
+footer {
+  padding: 2em 8.8%;
+  background-color: #303035;
 }
 /*# sourceMappingURL=global.css.map */
