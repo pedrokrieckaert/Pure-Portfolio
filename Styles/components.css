@@ -51,7 +51,7 @@ footer {
 
 .subHeader {
   margin: 15px 0;
-  min-width: 200px;
+  min-width: 15vw;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
