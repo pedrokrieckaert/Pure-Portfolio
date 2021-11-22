@@ -1,6 +1,6 @@
 @import "Abstract/theme";
 @import "Abstract/font";
-
+@import "Abstract/mixin";
 nav{
     position: sticky;
     top: 40vh;
@@ -40,7 +40,13 @@ footer{
 }
 
 .subHeader{
+    margin:15px 0;
+    width: fit-content;
+    
     h4{
+        @include cornerBorder;
+        padding: 10px;
         font-size: $h3;
+
     }
 }

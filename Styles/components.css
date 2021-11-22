@@ -49,7 +49,24 @@ footer {
   font-style: italic;
 }
 
+.subHeader {
+  margin: 15px 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .subHeader h4 {
+  /* thickness */
+  /* color */
+  /* width */
+  border: 2px solid transparent;
+  /* space for the border */
+  background: conic-gradient(from 90deg at top 2px left 2px, #0000 90deg, #f2f2f2 0) 0 0, conic-gradient(from 180deg at top 2px right 2px, #0000 90deg, #f2f2f2 0) 100% 0, conic-gradient(from 0deg at bottom 2px left 2px, #0000 90deg, #f2f2f2 0) 0 100%, conic-gradient(from -90deg at bottom 2px right 2px, #0000 90deg, #f2f2f2 0) 100% 100%;
+  background-size: 15px 15px;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  padding: 10px;
   font-size: 2.6rem;
 }
 /*# sourceMappingURL=components.css.map */

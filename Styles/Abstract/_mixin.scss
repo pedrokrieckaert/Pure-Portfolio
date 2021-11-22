@@ -1,0 +1,16 @@
+@mixin cornerBorder {
+    $b:2px;         /* thickness */
+    $c:#f2f2f2;   /* color */
+    $w:15px;        /* width */
+
+    border:$b solid transparent; /* space for the border */
+    $g:#0000 90deg,$c 0;
+    background:
+      conic-gradient(from 90deg  at top    $b left  $b,$g) 0    0,
+      conic-gradient(from 180deg at top    $b right $b,$g) 100% 0,
+      conic-gradient(from 0deg   at bottom $b left  $b,$g) 0    100%,
+      conic-gradient(from -90deg at bottom $b right $b,$g) 100% 100%;
+    background-size: $w  $w;
+    background-origin:border-box;
+    background-repeat:no-repeat;
+}
