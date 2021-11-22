@@ -78,3 +78,33 @@ footer{
         }
     }
 }
+
+.skillsList{
+    margin-top: 20;
+    padding: 0;
+    list-style-type: none;
+    
+    li{
+        @include cornerBorder;
+        margin-bottom: 20px;
+        width: 300px;
+    }
+
+    .itemBack{
+        background-image: url("../IMG/textGrid2x3.svg");
+        background-repeat: repeat;
+    }
+
+    .itemBar{
+        width: var(--width);
+        overflow: visible;
+        background: $primeGradient;
+    }
+
+    p{
+        margin: 0;
+        width: 275px;
+        padding: 10px 0 10px 25px;
+        font-size: $h4;
+    }
+}

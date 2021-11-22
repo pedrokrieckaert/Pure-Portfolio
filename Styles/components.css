@@ -118,4 +118,43 @@ footer {
 .textField .textBackground p {
   margin: 5px 20px;
 }
+
+.skillsList {
+  margin-top: 20;
+  padding: 0;
+  list-style-type: none;
+}
+
+.skillsList li {
+  /* thickness */
+  /* color */
+  /* width */
+  border: 2px solid transparent;
+  /* space for the border */
+  background: conic-gradient(from 90deg at top 2px left 2px, #0000 90deg, #f2f2f2 0) 0 0, conic-gradient(from 180deg at top 2px right 2px, #0000 90deg, #f2f2f2 0) 100% 0, conic-gradient(from 0deg at bottom 2px left 2px, #0000 90deg, #f2f2f2 0) 0 100%, conic-gradient(from -90deg at bottom 2px right 2px, #0000 90deg, #f2f2f2 0) 100% 100%;
+  background-size: 15px 15px;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.skillsList .itemBack {
+  background-image: url("../IMG/textGrid2x3.svg");
+  background-repeat: repeat;
+}
+
+.skillsList .itemBar {
+  width: var(--width);
+  overflow: visible;
+  background: -webkit-gradient(linear, left top, left bottom, from(#802121), color-stop(25%, #bc3030), color-stop(75%, #bc3030), to(#802121));
+  background: linear-gradient(180deg, #802121 0%, #bc3030 25%, #bc3030 75%, #802121 100%);
+}
+
+.skillsList p {
+  margin: 0;
+  width: 275px;
+  padding: 10px 0 10px 25px;
+  font-size: 1.8rem;
+}
 /*# sourceMappingURL=components.css.map */
