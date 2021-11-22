@@ -50,3 +50,18 @@ footer{
 
     }
 }
+
+.button{
+    margin: 15px 0;
+    width: fit-content;
+    cursor: pointer;
+    &:hover{
+        background-color: $backLight;
+    }
+    p{
+        font-size: $h3;
+        padding: 1em 3em;
+        @include cornerBorder;
+
+    }
+}
