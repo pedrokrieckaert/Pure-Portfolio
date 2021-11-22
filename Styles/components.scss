@@ -3,8 +3,9 @@
 
 nav{
     position: sticky;
-    top: 20vh;
+    top: 40vh;
     font-size: $h3;
+    float:right;
     ul{
         direction: rtl;
     }
@@ -35,5 +36,11 @@ footer{
     }
     p{
         font-style: italic;
+    }
+}
+
+.subHeader{
+    h4{
+        font-size: $h3;
     }
 }

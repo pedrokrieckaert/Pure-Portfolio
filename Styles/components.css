@@ -1,8 +1,9 @@
 nav {
   position: -webkit-sticky;
   position: sticky;
-  top: 20vh;
+  top: 40vh;
   font-size: 2.6rem;
+  float: right;
 }
 
 nav ul {
@@ -46,5 +47,9 @@ footer {
 
 .header p {
   font-style: italic;
+}
+
+.subHeader h4 {
+  font-size: 2.6rem;
 }
 /*# sourceMappingURL=components.css.map */
