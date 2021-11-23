@@ -12,8 +12,14 @@ body {
 }
 
 section {
-  margin: 0 17rem;
-  height: 100vh;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  section {
+    margin: 0 17rem;
+    height: 100vh;
+  }
 }
 
 h1 {

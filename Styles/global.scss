@@ -1,5 +1,6 @@
 @import "Abstract/theme";
 @import "Abstract/font";
+@import "Abstract/mixin";
 
 html{
     font-size: 62.5%;
@@ -15,8 +16,12 @@ body{
 }
 
 section{
-    margin:0 17rem;
-    height: 100vh;
+    margin: 0;
+    
+    @include md {
+        margin:0 17rem;
+        height: 100vh;
+    }
 }
 
 h1{
