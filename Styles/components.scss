@@ -2,6 +2,7 @@
 @import "Abstract/font";
 @import "Abstract/mixin";
 nav{
+    display: none;
     position: sticky;
     top: 40vh;
     font-size: $h3;
@@ -25,11 +26,18 @@ nav{
             color: $prime;
         }
     }
+
+    @include md {
+        display: initial;
+    }
 }
 
 footer{
-    padding: 2rem 17rem;
     background-color: $backLight;
+
+    @include md {
+        padding: 2rem 17rem;
+    }
 }
 
 .header{
@@ -79,7 +87,10 @@ footer{
     @include cornerBorder;
     margin-bottom: 2rem;
     padding: 0.5rem;
-    width: 70rem;
+
+    @include md{
+        width: 70rem;
+    }
     .textBackground{
         padding: $h5;
         background-image: url("../IMG/textGrid2x3.svg");
@@ -96,8 +107,11 @@ footer{
     img{
         @include cornerBorder;
         padding: 0.5rem;
-        height: 40rem;
-        width: 70rem;
+        width: calc(100% - 1.4rem);
+        height: auto;
+        @include md{
+            width: 70rem;
+        }
     }
 }
 

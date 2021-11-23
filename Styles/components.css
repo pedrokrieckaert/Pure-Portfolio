@@ -1,4 +1,5 @@
 nav {
+  display: none;
   position: -webkit-sticky;
   position: sticky;
   top: 40vh;
@@ -29,9 +30,20 @@ nav a:hover {
   color: #bc3030;
 }
 
+@media (min-width: 768px) {
+  nav {
+    display: initial;
+  }
+}
+
 footer {
-  padding: 2rem 17rem;
   background-color: #303035;
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding: 2rem 17rem;
+  }
 }
 
 .header {
@@ -117,7 +129,12 @@ footer {
   background-repeat: no-repeat;
   margin-bottom: 2rem;
   padding: 0.5rem;
-  width: 70rem;
+}
+
+@media (min-width: 768px) {
+  .textField {
+    width: 70rem;
+  }
 }
 
 .textField .textBackground {
@@ -145,8 +162,14 @@ footer {
   background-origin: border-box;
   background-repeat: no-repeat;
   padding: 0.5rem;
-  height: 40rem;
-  width: 70rem;
+  width: calc(100% - 1.4rem);
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .media img {
+    width: 70rem;
+  }
 }
 
 .skillsList {

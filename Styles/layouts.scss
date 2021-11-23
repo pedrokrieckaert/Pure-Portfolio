@@ -7,9 +7,22 @@
     .gridWrapper{
         display: grid;
         grid-template-areas: 
+        "tools"
+        "list1"
+        "hard"
+        "list2"
+        "soft"
+        "list3"
+        "lang"
+        "list4"
+        ;
+        @include md{
+            grid-template-areas: 
             "tools hard soft lang"
             "list1   list2   list3   list4"
-        ;
+            ;
+        }
+
 
         justify-items: center;
     }
