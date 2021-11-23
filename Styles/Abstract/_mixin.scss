@@ -1,7 +1,7 @@
 @mixin cornerBorder {
-    $b:2px;         /* thickness */
+    $b:0.2rem;         /* thickness */
     $c:#f2f2f2;   /* color */
-    $w:15px;        /* width */
+    $w:1.5rem;        /* width */
 
     border:$b solid transparent; /* space for the border */
     $g:#0000 90deg,$c 0;

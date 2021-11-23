@@ -9,10 +9,11 @@ nav{
     ul{
         direction: rtl;
         list-style-type: none;
+        padding: 0 1rem 0 0;
     }
 
     li{
-        margin: 15px 0;
+        margin: $h5 0;
         width: fit-content;
         cursor: pointer;
     }
@@ -27,7 +28,7 @@ nav{
 }
 
 footer{
-    padding: 2em 8.8%;
+    padding: 2rem 17rem;
     background-color: $backLight;
 }
 
@@ -35,7 +36,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px dashed $primeText;
+    border-bottom: 0.2rem dashed $primeText;
     h3{
         margin: 0;
         font-size: $h2;
@@ -46,21 +47,21 @@ footer{
 }
 
 .subHeader{
-    margin:15px 0;
-    min-width: 15vw;
+    margin:$h5 0;
+    min-width: 30rem;
     width: fit-content;
     text-align: center;
     
     h4{
         @include cornerBorder;
-        padding: 10px;
+        padding: $h5;
         font-size: $h3;
 
     }
 }
 
 .button{
-    margin: 15px 0;
+    margin: $h5 0;
     width: fit-content;
     cursor: pointer;
     &:hover{
@@ -76,29 +77,29 @@ footer{
 
 .textField{
     @include cornerBorder;
-    margin-bottom: 20px;
-    padding: 5px;
-    width: 700px;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    width: 70rem;
     .textBackground{
-        padding: 10px;
+        padding: $h5;
         background-image: url("../IMG/textGrid2x3.svg");
         background-repeat: repeat;
         p{
-            margin: 5px 20px;
+            margin: 0.5rem 2rem;
 
         }
     }
 }
 
 .skillsList{
-    margin-top: 30px;
+    margin-top: 3rem;
     padding: 0;
     list-style-type: none;
     
     li{
         @include cornerBorder;
-        margin-bottom: 30px;
-        width: 300px;
+        margin-bottom: 3rem;
+        width: 30rem;
     }
 
     .itemBack{
