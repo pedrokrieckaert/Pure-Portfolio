@@ -1,7 +1,9 @@
 @import "Abstract/theme";
 @import "Abstract/font";
 @import "Abstract/mixin";
+
 nav{
+    display: none;
     position: sticky;
     top: 40vh;
     font-size: $h3;
@@ -25,29 +27,46 @@ nav{
             color: $prime;
         }
     }
+
+    @include md {
+        display: initial;
+    }
 }
 
 footer{
-    padding: 2rem 17rem;
+    padding: 2rem 0.5rem;
     background-color: $backLight;
+    text-align: center;
+
+    @include md {
+        padding: 2rem 17rem;
+    }
 }
 
 .header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: 2rem;
     border-bottom: 0.2rem dashed $primeText;
     h3{
         margin: 0;
         font-size: $h2;
     }
     p{
+        display: none;
         font-style: italic;
+    }
+    @include md {
+        justify-content: space-between;
+        p{
+            display: initial
+        }
     }
 }
 
 .subHeader{
-    margin:$h5 0;
+    margin:$h5 auto;
     min-width: 30rem;
     width: fit-content;
     text-align: center;
@@ -61,7 +80,7 @@ footer{
 }
 
 .button{
-    margin: $h5 0;
+    margin: $h5 auto;
     width: fit-content;
     cursor: pointer;
     &:hover{
@@ -79,7 +98,10 @@ footer{
     @include cornerBorder;
     margin-bottom: 2rem;
     padding: 0.5rem;
-    width: 70rem;
+
+    @include md{
+        width: 70rem;
+    }
     .textBackground{
         padding: $h5;
         background-image: url("../IMG/textGrid2x3.svg");
@@ -96,8 +118,11 @@ footer{
     img{
         @include cornerBorder;
         padding: 0.5rem;
-        height: 40rem;
-        width: 70rem;
+        width: calc(100% - 1.4rem);
+        height: auto;
+        @include md{
+            width: 70rem;
+        }
     }
 }
 

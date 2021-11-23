@@ -1,4 +1,5 @@
 nav {
+  display: none;
   position: -webkit-sticky;
   position: sticky;
   top: 40vh;
@@ -29,9 +30,22 @@ nav a:hover {
   color: #bc3030;
 }
 
+@media (min-width: 768px) {
+  nav {
+    display: initial;
+  }
+}
+
 footer {
-  padding: 2rem 17rem;
+  padding: 2rem 0.5rem;
   background-color: #303035;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding: 2rem 17rem;
+  }
 }
 
 .header {
@@ -41,9 +55,10 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
   border-bottom: 0.2rem dashed #f2f2f2;
 }
 
@@ -53,11 +68,23 @@ footer {
 }
 
 .header p {
+  display: none;
   font-style: italic;
 }
 
+@media (min-width: 768px) {
+  .header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header p {
+    display: initial;
+  }
+}
+
 .subHeader {
-  margin: 1.6rem 0;
+  margin: 1.6rem auto;
   min-width: 30rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -80,7 +107,7 @@ footer {
 }
 
 .button {
-  margin: 1.6rem 0;
+  margin: 1.6rem auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -117,7 +144,12 @@ footer {
   background-repeat: no-repeat;
   margin-bottom: 2rem;
   padding: 0.5rem;
-  width: 70rem;
+}
+
+@media (min-width: 768px) {
+  .textField {
+    width: 70rem;
+  }
 }
 
 .textField .textBackground {
@@ -145,8 +177,14 @@ footer {
   background-origin: border-box;
   background-repeat: no-repeat;
   padding: 0.5rem;
-  height: 40rem;
-  width: 70rem;
+  width: calc(100% - 1.4rem);
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .media img {
+    width: 70rem;
+  }
 }
 
 .skillsList {
