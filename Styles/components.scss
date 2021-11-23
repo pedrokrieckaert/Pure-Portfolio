@@ -91,6 +91,16 @@ footer{
     }
 }
 
+.media{
+    margin-top: 2rem;
+    img{
+        @include cornerBorder;
+        padding: 0.5rem;
+        height: 40rem;
+        width: 70rem;
+    }
+}
+
 .skillsList{
     margin-top: 3rem;
     padding: 0;

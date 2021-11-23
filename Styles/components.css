@@ -130,6 +130,25 @@ footer {
   margin: 0.5rem 2rem;
 }
 
+.media {
+  margin-top: 2rem;
+}
+
+.media img {
+  /* thickness */
+  /* color */
+  /* width */
+  border: 0.2rem solid transparent;
+  /* space for the border */
+  background: conic-gradient(from 90deg at top 0.2rem left 0.2rem, #0000 90deg, #f2f2f2 0) 0 0, conic-gradient(from 180deg at top 0.2rem right 0.2rem, #0000 90deg, #f2f2f2 0) 100% 0, conic-gradient(from 0deg at bottom 0.2rem left 0.2rem, #0000 90deg, #f2f2f2 0) 0 100%, conic-gradient(from -90deg at bottom 0.2rem right 0.2rem, #0000 90deg, #f2f2f2 0) 100% 100%;
+  background-size: 1.5rem 1.5rem;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  padding: 0.5rem;
+  height: 40rem;
+  width: 70rem;
+}
+
 .skillsList {
   margin-top: 3rem;
   padding: 0;
