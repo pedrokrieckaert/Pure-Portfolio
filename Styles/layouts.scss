@@ -1,6 +1,11 @@
+@import "Abstract/mixin";
+
 #landing{
     background-image: url("../IMG/triGrid3.svg");
     background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    margin: 0 auto;
 }
 
 #skills{

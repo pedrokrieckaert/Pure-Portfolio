@@ -1,6 +1,7 @@
 @import "Abstract/theme";
 @import "Abstract/font";
 @import "Abstract/mixin";
+
 nav{
     display: none;
     position: sticky;
@@ -33,7 +34,9 @@ nav{
 }
 
 footer{
+    padding: 2rem 0.5rem;
     background-color: $backLight;
+    text-align: center;
 
     @include md {
         padding: 2rem 17rem;
@@ -43,19 +46,27 @@ footer{
 .header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: 2rem;
     border-bottom: 0.2rem dashed $primeText;
     h3{
         margin: 0;
         font-size: $h2;
     }
     p{
+        display: none;
         font-style: italic;
+    }
+    @include md {
+        justify-content: space-between;
+        p{
+            display: initial
+        }
     }
 }
 
 .subHeader{
-    margin:$h5 0;
+    margin:$h5 auto;
     min-width: 30rem;
     width: fit-content;
     text-align: center;
@@ -69,7 +80,7 @@ footer{
 }
 
 .button{
-    margin: $h5 0;
+    margin: $h5 auto;
     width: fit-content;
     cursor: pointer;
     &:hover{
