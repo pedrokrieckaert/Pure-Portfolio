@@ -3,6 +3,8 @@
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
+  -webkit-box-shadow: 0 0 1rem 1rem #222 inset;
+          box-shadow: 0 0 1rem 1rem #222 inset;
   margin: 0 auto;
 }
 
