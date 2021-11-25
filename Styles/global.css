@@ -31,6 +31,14 @@ h2 {
   font-size: 3.2rem;
 }
 
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.6rem;
+}
+
 p, figcaption {
   font-size: 1.6rem;
 }

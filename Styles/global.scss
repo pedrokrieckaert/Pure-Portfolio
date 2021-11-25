@@ -32,6 +32,14 @@ h2{
     font-size: $h1;
 }
 
+h3{
+    font-size: $h2;
+}
+
+h4{
+    font-size: $h3;
+}
+
 p, figcaption{
     font-size: $h5;
 }
