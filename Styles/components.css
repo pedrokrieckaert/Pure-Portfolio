@@ -234,6 +234,21 @@ footer {
           align-items: center;
 }
 
+.projectThumbnail .projectName {
+  margin-bottom: 2rem;
+  padding: 0 1.5rem;
+  background-color: #bc3030;
+  background-clip: content-box;
+  border-left: 0.2rem solid #f2f2f2;
+  border-right: 0.2rem solid #f2f2f2;
+  text-align: center;
+}
+
+.projectThumbnail .projectName h4 {
+  margin: 0;
+  padding: 1rem 10rem;
+}
+
 .projectThumbnail:hover .overlay {
   opacity: 1;
 }
