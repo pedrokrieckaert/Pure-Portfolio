@@ -113,8 +113,45 @@ footer{
     }
 }
 
+.projectThumbnail{
+    position: relative;
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    .borderWrapper{
+        @include cornerBorder;
+        padding: 0.5rem;
+    }
+
+    .overlay{
+        position: absolute;
+        opacity: 0;
+        top: 0.7rem;
+
+        left: 0.7rem;
+
+        height: 100%;
+        width: calc(100% - 1.4rem);
+    }
+
+    .contentFlexWrapper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover{
+        .overlay{
+            opacity: 1;
+        }
+    }
+}
+
 .media{
-    margin-top: 2rem;
+    margin: 2rem 0 0 0;
     img{
         @include cornerBorder;
         padding: 0.5rem;

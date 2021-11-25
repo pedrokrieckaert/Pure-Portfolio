@@ -31,7 +31,7 @@ h2 {
   font-size: 3.2rem;
 }
 
-p {
+p, figcaption {
   font-size: 1.6rem;
 }
 /*# sourceMappingURL=global.css.map */
