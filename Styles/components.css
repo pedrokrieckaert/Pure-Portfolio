@@ -23,7 +23,6 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #f2f2f2;
 }
 
 nav a:hover {
@@ -104,21 +103,21 @@ footer {
   padding: 1.6rem;
 }
 
-.button {
+.majorButton {
   margin: 1.6rem auto;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  cursor: pointer;
+  padding: 1.6rem 0;
+  background-color: transparent;
+  border: none;
 }
 
-.button:hover {
+.majorButton:hover {
   background-color: #303035;
 }
 
-.button p {
+.majorButton a {
   font-size: 2.6rem;
   padding: 0.5em 2em;
+  text-decoration: none;
   /* thickness */
   /* color */
   /* width */
@@ -139,12 +138,10 @@ footer {
 }
 
 .minorButton a {
-  color: #f2f2f2;
   text-decoration: none;
 }
 
 .minorButton:hover {
-  background-color: none;
   background: -webkit-gradient(linear, left top, left bottom, from(#802121), color-stop(25%, #bc3030), color-stop(75%, #bc3030), to(#802121));
   background: linear-gradient(180deg, #802121 0%, #bc3030 25%, #bc3030 75%, #802121 100%);
 }

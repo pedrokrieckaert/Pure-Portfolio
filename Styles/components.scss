@@ -22,7 +22,6 @@ nav{
 
     a{
         text-decoration: none;
-        color: $primeText;
         &:hover{
             color: $prime;
         }
@@ -76,16 +75,18 @@ footer{
     }
 }
 
-.button{
+.majorButton{
     margin: $h5 auto;
-    width: fit-content;
-    cursor: pointer;
+    padding: $h5 0;
+    background-color: transparent;
+    border: none;
     &:hover{
         background-color: $backLight;
     }
-    p{
+    a{
         font-size: $h3;
         padding: 0.5em 2em;
+        text-decoration: none;
         @include cornerBorder;
 
     }
@@ -97,13 +98,11 @@ footer{
     border: none;
     border-left: solid 0.3rem $primeText;
     border-right: solid 0.3rem $primeText;
-    a{ 
-        color: $primeText;
+    a{
         text-decoration: none;
     }
 
     &:hover{
-        background-color: none;
         background: $primeGradient;
     }
 }
