@@ -178,6 +178,7 @@ footer {
 
 .projectThumbnail {
   position: relative;
+  width: 30%;
 }
 
 .projectThumbnail img {
@@ -238,6 +239,8 @@ footer {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 95%;
+  height: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,7 +254,7 @@ footer {
 }
 
 .projectThumbnail .projectName {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   padding: 0 1.5rem;
   background-color: #bc3030;
   background-clip: content-box;
@@ -262,7 +265,14 @@ footer {
 
 .projectThumbnail .projectName h4 {
   margin: 0;
-  padding: 1rem 10rem;
+  padding: 0.5rem 6rem;
+}
+
+.projectThumbnail .textField {
+  margin: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .projectThumbnail:hover .overlay {

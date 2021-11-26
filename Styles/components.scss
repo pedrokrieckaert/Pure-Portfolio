@@ -115,6 +115,7 @@ footer{
     @include md{
         width: 70rem;
     }
+
     .textBackground{
         padding: $h5;
         background-image: url("../IMG/textGrid2x3.svg");
@@ -128,6 +129,7 @@ footer{
 
 .projectThumbnail{
     position: relative;
+    width: 30%;
     img{
         width: 100%;
         height: auto;
@@ -177,13 +179,15 @@ footer{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: 95%;
+        height: 95%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .projectName{
-        margin-bottom: 2rem;
+        margin-bottom: 0.5rem;
         padding: 0 1.5rem;
         background-color: $prime;
         background-clip: content-box;
@@ -193,8 +197,13 @@ footer{
 
         h4{
             margin: 0;
-            padding: 1rem 10rem;
+            padding: 0.5rem 6rem;
         }
+    }
+
+    .textField{
+        margin: 0;
+        width: fit-content;
     }
 
     &:hover{
