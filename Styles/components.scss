@@ -46,7 +46,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    margin: 2rem 0;
     border-bottom: 0.2rem dashed $primeText;
     h3{
         margin: 0;
@@ -142,8 +142,8 @@ footer{
         li{
             float: left;
             color: $prime;
-            width: 5rem;
-            height: 2rem;
+            width: 6.5rem;
+            height: 4rem;
             background-color: $primeText;
             background-clip: content-box;
             font-size: $h5;
@@ -175,6 +175,7 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
     }
 
     .projectName{
@@ -195,6 +196,11 @@ footer{
     .textField{
         margin: 1rem 0;
         width: fit-content;
+        text-align: center;
+
+        p{
+            margin: 0;
+        }
     }
 
     @include lg{
@@ -203,6 +209,7 @@ footer{
         ul{
             li{
                 width: 10rem;
+                height: 2rem;
             }
         }
 

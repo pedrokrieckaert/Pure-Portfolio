@@ -57,7 +57,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 2rem;
+  margin: 2rem 0;
   border-bottom: 0.2rem dashed #f2f2f2;
 }
 
@@ -194,8 +194,8 @@ footer {
 .projectThumbnail ul li {
   float: left;
   color: #bc3030;
-  width: 5rem;
-  height: 2rem;
+  width: 6.5rem;
+  height: 4rem;
   background-color: #f2f2f2;
   background-clip: content-box;
   font-size: 1.6rem;
@@ -239,6 +239,9 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .projectThumbnail .projectName {
@@ -261,6 +264,11 @@ footer {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  text-align: center;
+}
+
+.projectThumbnail .textField p {
+  margin: 0;
 }
 
 @media (min-width: 992px) {
@@ -270,6 +278,7 @@ footer {
   }
   .projectThumbnail ul li {
     width: 10rem;
+    height: 2rem;
   }
   .projectThumbnail .overlay {
     position: absolute;
