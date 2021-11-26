@@ -129,7 +129,7 @@ footer{
 
 .projectThumbnail{
     position: relative;
-    width: 30%;
+    margin: 0 0 2rem 0;
     img{
         width: 100%;
         height: auto;
@@ -142,10 +142,10 @@ footer{
         li{
             float: left;
             color: $prime;
+            width: 5rem;
+            height: 2rem;
             background-color: $primeText;
             background-clip: content-box;
-            height: 2rem;
-            width: 10rem;
             font-size: $h5;
             text-align: center;
             padding-right: 1.5rem;
@@ -166,28 +166,19 @@ footer{
     }
 
     .overlay{
-        position: absolute;
-        opacity: 0;
-        top: 0.7rem;
-        left: 0.7rem;
-        height: 100%;
-        width: calc(100% - 1.4rem);
+        img{
+            display: none;
+        }
     }
 
     .contentFlexWrapper{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 95%;
-        height: 95%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .projectName{
-        margin-bottom: 0.5rem;
+        margin: 1rem 0 1rem 0;
         padding: 0 1.5rem;
         background-color: $prime;
         background-clip: content-box;
@@ -202,13 +193,52 @@ footer{
     }
 
     .textField{
-        margin: 0;
+        margin: 1rem 0;
         width: fit-content;
     }
 
-    &:hover{
+    @include lg{
+        width: 30%;
+        margin: 0;
+        ul{
+            li{
+                width: 10rem;
+            }
+        }
+
         .overlay{
-            opacity: 1;
+            position: absolute;
+            top: 0.7rem;
+            left: 0.7rem;
+            height: 100%;
+            width: calc(100% - 1.4rem);
+            opacity: 0;
+            img{
+                display: initial;
+            }
+        }
+
+        .contentFlexWrapper{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 95%;
+            height: 95%;
+        }
+
+        .projectName{
+            margin: 0.5em 0 0 0;
+        }
+
+        .textField{
+            margin: 0;
+        }
+
+        &:hover{
+            .overlay{
+                opacity: 1;
+            }
         }
     }
 }

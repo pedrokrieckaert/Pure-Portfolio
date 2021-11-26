@@ -20,21 +20,21 @@ $screen-md-min: 768px; //portrait view
 $screen-lg-min: 992px;
 $screen-xl-min: 1200px;
 
-//small
+//small - phone portrait
 @mixin sm {
   @media (min-width: #{$screen-sm-min}){
     @content;
   }
 }
 
-//medium
+//medium - tablet landscape
 @mixin md {
   @media (min-width: #{$screen-md-min}){
     @content;
   }
 }
 
-//large
+//large - laptop screen
 @mixin lg {
   @media (min-width: #{$screen-lg-min}){
     @content;

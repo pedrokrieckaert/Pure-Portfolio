@@ -178,7 +178,7 @@ footer {
 
 .projectThumbnail {
   position: relative;
-  width: 30%;
+  margin: 0 0 2rem 0;
 }
 
 .projectThumbnail img {
@@ -194,10 +194,10 @@ footer {
 .projectThumbnail ul li {
   float: left;
   color: #bc3030;
+  width: 5rem;
+  height: 2rem;
   background-color: #f2f2f2;
   background-clip: content-box;
-  height: 2rem;
-  width: 10rem;
   font-size: 1.6rem;
   text-align: center;
   padding-right: 1.5rem;
@@ -224,23 +224,11 @@ footer {
   padding: 0.5rem;
 }
 
-.projectThumbnail .overlay {
-  position: absolute;
-  opacity: 0;
-  top: 0.7rem;
-  left: 0.7rem;
-  height: 100%;
-  width: calc(100% - 1.4rem);
+.projectThumbnail .overlay img {
+  display: none;
 }
 
 .projectThumbnail .contentFlexWrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 95%;
-  height: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,7 +242,7 @@ footer {
 }
 
 .projectThumbnail .projectName {
-  margin-bottom: 0.5rem;
+  margin: 1rem 0 1rem 0;
   padding: 0 1.5rem;
   background-color: #bc3030;
   background-clip: content-box;
@@ -269,14 +257,49 @@ footer {
 }
 
 .projectThumbnail .textField {
-  margin: 0;
+  margin: 1rem 0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-.projectThumbnail:hover .overlay {
-  opacity: 1;
+@media (min-width: 992px) {
+  .projectThumbnail {
+    width: 30%;
+    margin: 0;
+  }
+  .projectThumbnail ul li {
+    width: 10rem;
+  }
+  .projectThumbnail .overlay {
+    position: absolute;
+    top: 0.7rem;
+    left: 0.7rem;
+    height: 100%;
+    width: calc(100% - 1.4rem);
+    opacity: 0;
+  }
+  .projectThumbnail .overlay img {
+    display: initial;
+  }
+  .projectThumbnail .contentFlexWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 95%;
+    height: 95%;
+  }
+  .projectThumbnail .projectName {
+    margin: 0.5em 0 0 0;
+  }
+  .projectThumbnail .textField {
+    margin: 0;
+  }
+  .projectThumbnail:hover .overlay {
+    opacity: 1;
+  }
 }
 
 .media {
