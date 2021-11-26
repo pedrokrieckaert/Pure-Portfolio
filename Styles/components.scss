@@ -91,6 +91,23 @@ footer{
     }
 }
 
+.minorButton{
+    padding: 0.5rem 4rem;
+    background-color: $backLight;
+    border: none;
+    border-left: solid 0.3rem $primeText;
+    border-right: solid 0.3rem $primeText;
+    a{ 
+        color: $primeText;
+        text-decoration: none;
+    }
+
+    &:hover{
+        background-color: none;
+        background: $primeGradient;
+    }
+}
+
 .textField{
     @include cornerBorder;
     margin-bottom: 2rem;
@@ -115,10 +132,6 @@ footer{
     img{
         width: 100%;
         height: auto;
-    }
-
-    h4{
-
     }
 
     ul{

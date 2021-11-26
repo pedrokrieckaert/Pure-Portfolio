@@ -130,6 +130,25 @@ footer {
   background-repeat: no-repeat;
 }
 
+.minorButton {
+  padding: 0.5rem 4rem;
+  background-color: #303035;
+  border: none;
+  border-left: solid 0.3rem #f2f2f2;
+  border-right: solid 0.3rem #f2f2f2;
+}
+
+.minorButton a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.minorButton:hover {
+  background-color: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#802121), color-stop(25%, #bc3030), color-stop(75%, #bc3030), to(#802121));
+  background: linear-gradient(180deg, #802121 0%, #bc3030 25%, #bc3030 75%, #802121 100%);
+}
+
 .textField {
   /* thickness */
   /* color */
