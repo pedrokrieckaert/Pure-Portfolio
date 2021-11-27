@@ -325,7 +325,7 @@ footer ul li {
     position: absolute;
     top: 0.7rem;
     left: 0.7rem;
-    height: 100%;
+    height: auto;
     width: calc(100% - 1.4rem);
     opacity: 0;
   }
@@ -338,6 +338,8 @@ footer ul li {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 95%;
     height: 95%;
   }

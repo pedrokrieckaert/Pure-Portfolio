@@ -31,6 +31,20 @@
       align-self: flex-start;
 }
 
+@media (min-width: 992px) {
+  #projects .gridWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem 0;
+    height: 100%;
+  }
+}
+
 #bio .gridWrapper {
   display: -ms-grid;
   display: grid;
