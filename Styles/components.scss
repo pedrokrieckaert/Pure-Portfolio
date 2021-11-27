@@ -311,12 +311,18 @@ footer{
 
     .itemLevel{
         float: right;
-        transform: translate(0, -16px);
+        transform: translate(0.5rem, -1.6rem);
         display: var(--display);
         font-size: 1rem;
 
         &::after{
-            content: "tri";
+            content: "";
+            display: inline-block;
+            background-image: url("../IMG/triDownRed.svg");
+            width: 1rem;
+            height: 1rem;
+            background-repeat: no-repeat;
+            background-size: contain;
         }
     }
 
@@ -324,5 +330,16 @@ footer{
         margin: 0;
         width: 275px;
         padding: 10px 0 10px 25px;
+        white-space: nowrap;
+
+        &::before{
+            content: "";
+            display: inline-block;
+            background-image: url("../IMG/triRightWhite.svg");
+            width: 1rem;
+            height: 1rem;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
     }
 }
