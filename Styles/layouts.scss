@@ -14,7 +14,11 @@
 
     h1{margin: 1rem;}
 
-    h2{margin: 0;}
+    h2{margin: 1rem;}
+
+    .majorButton{
+        align-self: flex-start;
+    }
 }
 
 #skills{

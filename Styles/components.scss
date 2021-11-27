@@ -88,19 +88,31 @@ footer{
 }
 
 .majorButton{
-    margin: $h5 auto;
-    padding: $h5 0;
-    background-color: transparent;
-    border: none;
-    &:hover{
-        background-color: $backLight;
-    }
-    a{
-        font-size: $h3;
-        padding: 0.5em 2em;
-        text-decoration: none;
-        @include cornerBorder;
+    @include cornerBorder;
+    background-color: $backLight;
+    margin: 0 auto;
 
+    button{
+        padding: $h5 4rem;
+        border: none;
+        border-top: 0.2rem dashed $primeText;
+        border-bottom: 0.2rem dashed $primeText;
+        background-color: transparent;
+    }
+
+    a{
+        padding: 0 2rem 0.2rem 2rem;
+        font-size: $h3;
+        text-decoration: none;
+
+    }
+
+    &:hover{
+        background-color: $backHighlight;
+
+        a{
+            border-bottom: 0.4rem solid $prime;
+        }
     }
 }
 

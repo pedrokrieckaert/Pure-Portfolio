@@ -23,7 +23,12 @@
 }
 
 #landing h2 {
-  margin: 0;
+  margin: 1rem;
+}
+
+#landing .majorButton {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 #skills .gridWrapper {

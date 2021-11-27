@@ -117,20 +117,6 @@ footer ul li {
 }
 
 .majorButton {
-  margin: 1.6rem auto;
-  padding: 1.6rem 0;
-  background-color: transparent;
-  border: none;
-}
-
-.majorButton:hover {
-  background-color: #303035;
-}
-
-.majorButton a {
-  font-size: 2.6rem;
-  padding: 0.5em 2em;
-  text-decoration: none;
   /* thickness */
   /* color */
   /* width */
@@ -140,6 +126,30 @@ footer ul li {
   background-size: 1.5rem 1.5rem;
   background-origin: border-box;
   background-repeat: no-repeat;
+  background-color: #303035;
+  margin: 0 auto;
+}
+
+.majorButton button {
+  padding: 1.6rem 4rem;
+  border: none;
+  border-top: 0.2rem dashed #f2f2f2;
+  border-bottom: 0.2rem dashed #f2f2f2;
+  background-color: transparent;
+}
+
+.majorButton a {
+  padding: 0 2rem 0.2rem 2rem;
+  font-size: 2.6rem;
+  text-decoration: none;
+}
+
+.majorButton:hover {
+  background-color: #403035;
+}
+
+.majorButton:hover a {
+  border-bottom: 0.4rem solid #bc3030;
 }
 
 .minorButton {
