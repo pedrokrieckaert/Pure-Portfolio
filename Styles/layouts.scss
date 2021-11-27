@@ -8,6 +8,13 @@
     text-align: center;
     box-shadow: 0 0 1rem 1rem $back inset;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1{margin: 1rem;}
+
+    h2{margin: 0;}
 }
 
 #skills{

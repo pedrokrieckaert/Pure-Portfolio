@@ -6,6 +6,24 @@
   -webkit-box-shadow: 0 0 1rem 1rem #222 inset;
           box-shadow: 0 0 1rem 1rem #222 inset;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#landing h1 {
+  margin: 1rem;
+}
+
+#landing h2 {
+  margin: 0;
 }
 
 #skills .gridWrapper {
