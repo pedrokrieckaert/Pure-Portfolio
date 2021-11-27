@@ -1,0 +1,434 @@
+nav {
+  display: none;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 40vh;
+  font-size: 2.6rem;
+  float: right;
+}
+
+nav ul {
+  direction: rtl;
+  list-style-type: none;
+  padding: 0 1rem 0 0;
+}
+
+nav li {
+  margin: 1.6rem 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #bc3030;
+}
+
+@media (min-width: 992px) {
+  nav {
+    display: initial;
+  }
+}
+
+footer {
+  padding: 2rem 0.5rem;
+  background-color: #303035;
+  text-align: center;
+}
+
+footer ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+footer ul li {
+  float: left;
+  margin: 0 2rem;
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding: 2rem 17rem;
+  }
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10rem 0 2rem 0;
+  border-bottom: 0.2rem dashed #f2f2f2;
+}
+
+.header h3 {
+  margin: 0;
+}
+
+.header p {
+  display: none;
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header p {
+    display: initial;
+  }
+}
+
+.subHeader {
+  margin: 1.6rem auto;
+  min-width: 30rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+.subHeader h4 {
+  /* thickness */
+  /* color */
+  /* width */
+  border: 0.2rem solid transparent;
+  /* space for the border */
+  background: conic-gradient(from 90deg at top 0.2rem left 0.2rem, #0000 90deg, #f2f2f2 0) 0 0, conic-gradient(from 180deg at top 0.2rem right 0.2rem, #0000 90deg, #f2f2f2 0) 100% 0, conic-gradient(from 0deg at bottom 0.2rem left 0.2rem, #0000 90deg, #f2f2f2 0) 0 100%, conic-gradient(from -90deg at bottom 0.2rem right 0.2rem, #0000 90deg, #f2f2f2 0) 100% 100%;
+  background-size: 1.5rem 1.5rem;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 1.6rem;
+}
+
+.majorButton {
+  /* thickness */
+  /* color */
+  /* width */
+  border: 0.2rem solid transparent;
+  /* space for the border */
+  background: conic-gradient(from 90deg at top 0.2rem left 0.2rem, #0000 90deg, #f2f2f2 0) 0 0, conic-gradient(from 180deg at top 0.2rem right 0.2rem, #0000 90deg, #f2f2f2 0) 100% 0, conic-gradient(from 0deg at bottom 0.2rem left 0.2rem, #0000 90deg, #f2f2f2 0) 0 100%, conic-gradient(from -90deg at bottom 0.2rem right 0.2rem, #0000 90deg, #f2f2f2 0) 100% 100%;
+  background-size: 1.5rem 1.5rem;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-color: #303035;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.majorButton button {
+  padding: 1.6rem 4rem;
+  border: none;
+  border-top: 0.2rem dashed #f2f2f2;
+  border-bottom: 0.2rem dashed #f2f2f2;
+  background-color: transparent;
+}
+
+.majorButton a {
+  padding: 0 2rem 0.2rem 2rem;
+  font-size: 2.6rem;
+  text-decoration: none;
+}
+
+.majorButton:hover {
+  background-color: #403035;
+}
+
+.majorButton:hover a {
+  border-bottom: 0.4rem solid #bc3030;
+}
+
+.minorButton {
+  padding: 0.5rem 4rem;
+  background-color: #303035;
+  border: none;
+  border-left: solid 0.3rem #f2f2f2;
+  border-right: solid 0.3rem #f2f2f2;
+}
+
+.minorButton a {
+  text-decoration: none;
+}
+
+.minorButton:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#802121), color-stop(25%, #bc3030), color-stop(75%, #bc3030), to(#802121));
+  background: linear-gradient(180deg, #802121 0%, #bc3030 25%, #bc3030 75%, #802121 100%);
+}
+
+.textField {
+  /* thickness */
+  /* color */
+  /* width */
+  border: 0.2rem solid transparent;
+  /* space for the border */
+  background: conic-gradient(from 90deg at top 0.2rem left 0.2rem, #0000 90deg, #f2f2f2 0) 0 0, conic-gradient(from 180deg at top 0.2rem right 0.2rem, #0000 90deg, #f2f2f2 0) 100% 0, conic-gradient(from 0deg at bottom 0.2rem left 0.2rem, #0000 90deg, #f2f2f2 0) 0 100%, conic-gradient(from -90deg at bottom 0.2rem right 0.2rem, #0000 90deg, #f2f2f2 0) 100% 100%;
+  background-size: 1.5rem 1.5rem;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .textField {
+    width: 70rem;
+  }
+}
+
+.textField .textBackground {
+  padding: 1.6rem;
+  background-image: url("../IMG/textGrid2x3.svg");
+  background-repeat: repeat;
+}
+
+.textField .textBackground p {
+  margin: 0.5rem 2rem;
+}
+
+.projectThumbnail {
+  position: relative;
+  margin: 0 0 4rem 0;
+}
+
+.projectThumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.projectThumbnail ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.projectThumbnail ul li {
+  float: left;
+  color: #bc3030;
+  width: 6.5rem;
+  height: 4rem;
+  background-color: #f2f2f2;
+  background-clip: content-box;
+  font-size: 1.4rem;
+  text-align: center;
+  padding-right: 1.5rem;
+  margin: 0 0 0 1.5rem;
+  border-right: 0.2rem solid #f2f2f2;
+}
+
+.projectThumbnail ul li:first-of-type {
+  margin: 0;
+  padding-left: 1.5rem;
+  border-left: 0.2rem solid #f2f2f2;
+}
+
+.projectThumbnail .borderWrapper {
+  /* thickness */
+  /* color */
+  /* width */
+  border: 0.2rem solid transparent;
+  /* space for the border */
+  background: conic-gradient(from 90deg at top 0.2rem left 0.2rem, #0000 90deg, #f2f2f2 0) 0 0, conic-gradient(from 180deg at top 0.2rem right 0.2rem, #0000 90deg, #f2f2f2 0) 100% 0, conic-gradient(from 0deg at bottom 0.2rem left 0.2rem, #0000 90deg, #f2f2f2 0) 0 100%, conic-gradient(from -90deg at bottom 0.2rem right 0.2rem, #0000 90deg, #f2f2f2 0) 100% 100%;
+  background-size: 1.5rem 1.5rem;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  padding: 0.5rem;
+}
+
+.projectThumbnail .overlay img {
+  display: none;
+}
+
+.projectThumbnail .contentFlexWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projectThumbnail .projectName {
+  margin: 1rem 0 1rem 0;
+  padding: 0 1.5rem;
+  background-color: #bc3030;
+  background-clip: content-box;
+  border-left: 0.2rem solid #f2f2f2;
+  border-right: 0.2rem solid #f2f2f2;
+  text-align: center;
+}
+
+.projectThumbnail .projectName h4 {
+  margin: 0;
+  padding: 0.5rem 6rem;
+}
+
+.projectThumbnail .textField {
+  margin: 1rem 0;
+  padding: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+.projectThumbnail .textField p {
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  .projectThumbnail {
+    width: 30%;
+    margin: 0;
+  }
+  .projectThumbnail ul li {
+    width: 10rem;
+    height: 2rem;
+  }
+  .projectThumbnail .overlay {
+    position: absolute;
+    top: 0.7rem;
+    left: 0.7rem;
+    height: 100%;
+    width: calc(100% - 1.4rem);
+    opacity: 0;
+  }
+  .projectThumbnail .overlay img {
+    display: initial;
+  }
+  .projectThumbnail .contentFlexWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 95%;
+    height: 95%;
+  }
+  .projectThumbnail .projectName {
+    margin: 0.5em 0 0 0;
+  }
+  .projectThumbnail .textField {
+    margin: 0;
+  }
+  .projectThumbnail:hover .overlay {
+    opacity: 1;
+  }
+}
+
+.media {
+  margin: 2rem 0 0 0;
+}
+
+.media img {
+  /* thickness */
+  /* color */
+  /* width */
+  border: 0.2rem solid transparent;
+  /* space for the border */
+  background: conic-gradient(from 90deg at top 0.2rem left 0.2rem, #0000 90deg, #f2f2f2 0) 0 0, conic-gradient(from 180deg at top 0.2rem right 0.2rem, #0000 90deg, #f2f2f2 0) 100% 0, conic-gradient(from 0deg at bottom 0.2rem left 0.2rem, #0000 90deg, #f2f2f2 0) 0 100%, conic-gradient(from -90deg at bottom 0.2rem right 0.2rem, #0000 90deg, #f2f2f2 0) 100% 100%;
+  background-size: 1.5rem 1.5rem;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  padding: 0.5rem;
+  width: calc(100% - 1.4rem);
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .media img {
+    width: 70rem;
+  }
+}
+
+.skillsList {
+  margin-top: 1.5rem;
+  padding: 0;
+  list-style-type: none;
+}
+
+.skillsList li {
+  /* thickness */
+  /* color */
+  /* width */
+  border: 0.2rem solid transparent;
+  /* space for the border */
+  background: conic-gradient(from 90deg at top 0.2rem left 0.2rem, #0000 90deg, #f2f2f2 0) 0 0, conic-gradient(from 180deg at top 0.2rem right 0.2rem, #0000 90deg, #f2f2f2 0) 100% 0, conic-gradient(from 0deg at bottom 0.2rem left 0.2rem, #0000 90deg, #f2f2f2 0) 0 100%, conic-gradient(from -90deg at bottom 0.2rem right 0.2rem, #0000 90deg, #f2f2f2 0) 100% 100%;
+  background-size: 1.5rem 1.5rem;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  margin-bottom: 3rem;
+  width: 30rem;
+}
+
+.skillsList .itemBack {
+  background-image: url("../IMG/textGrid2x3.svg");
+  background-repeat: repeat;
+}
+
+.skillsList .itemBar {
+  width: var(--width);
+  background: -webkit-gradient(linear, left top, left bottom, from(#802121), color-stop(25%, #bc3030), color-stop(75%, #bc3030), to(#802121));
+  background: linear-gradient(180deg, #802121 0%, #bc3030 25%, #bc3030 75%, #802121 100%);
+}
+
+.skillsList .itemLevel {
+  float: right;
+  -webkit-transform: translate(0.5rem, -1.6rem);
+          transform: translate(0.5rem, -1.6rem);
+  display: var(--display);
+  font-size: 1rem;
+}
+
+.skillsList .itemLevel::after {
+  content: "";
+  display: inline-block;
+  background-image: url("../IMG/triDownRed.svg");
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.skillsList p {
+  margin: 0;
+  width: 275px;
+  padding: 10px 0 10px 25px;
+  white-space: nowrap;
+}
+
+.skillsList p::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../IMG/triRightWhite.svg");
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/*# sourceMappingURL=components.css.map */

@@ -1,0 +1,76 @@
+#landing {
+  background-image: url("../IMG/triGrid3.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  -webkit-box-shadow: 0 0 1rem 1rem #222 inset;
+          box-shadow: 0 0 1rem 1rem #222 inset;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#landing h1 {
+  margin: 1rem;
+}
+
+#landing h2 {
+  margin: 1rem 1rem 6rem 1rem;
+}
+
+#landing .majorButton {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+#skills .gridWrapper {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "tools" "list1" "hard" "list2" "soft" "list3" "lang" "list4";
+  justify-items: center;
+}
+
+@media (min-width: 768px) {
+  #skills .gridWrapper {
+        grid-template-areas: "tools hard soft lang" "list1   list2   list3   list4";
+  }
+}
+
+#skills .subHeader:nth-of-type(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: tools;
+}
+
+#skills .skillsList:nth-of-type(1) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: list1;
+}
+
+#skills .skillsList:nth-of-type(2) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: list2;
+}
+
+#skills .skillsList:nth-of-type(3) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: list3;
+}
+
+#skills .skillsList:nth-of-type(4) {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: list4;
+}
+/*# sourceMappingURL=layouts.css.map */

@@ -1,0 +1,57 @@
+@mixin cornerBorder {
+    $b:0.2rem;         /* thickness */
+    $c:#f2f2f2;   /* color */
+    $w:1.5rem;        /* width */
+
+    border:$b solid transparent; /* space for the border */
+    $g:#0000 90deg,$c 0;
+    background:
+      conic-gradient(from 90deg  at top    $b left  $b,$g) 0    0,
+      conic-gradient(from 180deg at top    $b right $b,$g) 100% 0,
+      conic-gradient(from 0deg   at bottom $b left  $b,$g) 0    100%,
+      conic-gradient(from -90deg at bottom $b right $b,$g) 100% 100%;
+    background-size: $w  $w;
+    background-origin:border-box;
+    background-repeat:no-repeat;
+}
+
+$screen-sm-min: 576px; //landscape view
+$screen-md-min: 768px; //portrait view
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
+//small - phone portrait
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}){
+    @content;
+  }
+}
+
+//medium - tablet landscape
+@mixin md {
+  @media (min-width: #{$screen-md-min}){
+    @content;
+  }
+}
+
+//large - laptop screen
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}){
+    @content;
+  }
+}
+
+//extra large
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}){
+    @content;
+  }
+}
+
+//custom
+@mixin rwd($screen) {
+  @media (min-width: #{$screen+'px'}){
+    @content
+  }
+  
+}
