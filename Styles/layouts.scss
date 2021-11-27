@@ -21,6 +21,21 @@
     }
 }
 
+#bio{
+    .gridWrapper{
+        display: grid;
+        grid-template-areas: 
+        "bio"
+        "text1"
+        "exp"
+        "text2"
+        "text3"
+        "button"
+        ;
+        justify-items: center;
+    }
+}
+
 #skills{
     .gridWrapper{
         display: grid;
@@ -34,7 +49,17 @@
         "lang"
         "list4"
         ;
+
         @include md{
+            grid-template-areas: 
+            "tools lang"
+            "list1 list4"
+            "hard soft"
+            "list2 list3"
+            ;
+        }
+
+        @include lg{
             grid-template-areas: 
             "tools hard soft lang"
             "list1   list2   list3   list4"
@@ -47,6 +72,18 @@
     .subHeader{
         &:nth-of-type(1){
             grid-area: tools;
+        }
+
+        &:nth-of-type(2){
+            grid-area: hard;
+        }
+
+        &:nth-of-type(3){
+            grid-area: soft;
+        }
+
+        &:nth-of-type(4){
+            grid-area: lang;
         }
         
     }

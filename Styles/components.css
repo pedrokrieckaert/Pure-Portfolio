@@ -73,6 +73,8 @@ footer ul li {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 10rem 0 2rem 0;
+  padding: 1rem 0;
+  white-space: nowrap;
   border-bottom: 0.2rem dashed #f2f2f2;
 }
 
@@ -85,11 +87,20 @@ footer ul li {
   font-style: italic;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .header h3::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../IMG/triDownRed.svg");
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   .header p {
     display: initial;
@@ -129,6 +140,8 @@ footer ul li {
   background-size: 1.5rem 1.5rem;
   background-origin: border-box;
   background-repeat: no-repeat;
+  border-top: 0.2rem dashed #f2f2f2;
+  border-bottom: 0.2rem dashed #f2f2f2;
   background-color: #303035;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -139,8 +152,6 @@ footer ul li {
 .majorButton button {
   padding: 1.6rem 4rem;
   border: none;
-  border-top: 0.2rem dashed #f2f2f2;
-  border-bottom: 0.2rem dashed #f2f2f2;
   background-color: transparent;
 }
 

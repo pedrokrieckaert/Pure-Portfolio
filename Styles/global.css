@@ -16,7 +16,7 @@ section {
   min-height: 100vh;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   section {
     margin: 0 17rem;
     height: 100vh;
