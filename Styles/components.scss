@@ -75,7 +75,6 @@ footer{
         font-style: italic;
     }
     @include lg {
-        margin: 10rem 0 2rem 0;
         justify-content: space-between;
         h3{
             &::before{

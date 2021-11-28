@@ -92,7 +92,6 @@ footer ul a:hover {
 
 @media (min-width: 992px) {
   .header {
-    margin: 10rem 0 2rem 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;

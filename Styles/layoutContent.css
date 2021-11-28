@@ -21,6 +21,14 @@ section .gridWrapper {
 
 #landing {
   text-align: center;
+  background-image: url("../IMG/triGrid3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#landing h1 {
+  margin: 0 0 3rem 0;
 }
 
 #landing h2 {
@@ -39,5 +47,51 @@ section .gridWrapper {
           justify-content: stretch;
   gap: 2rem;
       grid-template-areas: "res" "client" "deliver" "colab";
+}
+
+#landing #res {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: res;
+}
+
+#landing #client {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: client;
+}
+
+#landing #deliver {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: deliver;
+}
+
+#landing #colab {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: colab;
+}
+
+@media (min-width: 768px) {
+  #landing .gridWrapper {
+        grid-template-areas: "res colab" "client deliver";
+  }
+}
+
+@media (min-width: 992px) {
+  #landing {
+    background-image: url("../IMG/New UI filtered 2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+  }
+  #landing h1 {
+    padding: 10rem 0 0 0;
+  }
+  #landing .gridWrapper {
+        grid-template-areas: "res client deliver colab";
+  }
 }
 /*# sourceMappingURL=layoutContent.css.map */

@@ -14,6 +14,12 @@ section {
   }
 }
 
+@media (min-width: 992px) {
+  .header {
+    margin: 10rem 0 2rem 0;
+  }
+}
+
 #landing {
   background-image: url("../IMG/triGrid3.svg");
   background-repeat: no-repeat;
