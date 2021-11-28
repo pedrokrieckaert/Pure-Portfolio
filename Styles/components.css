@@ -29,7 +29,7 @@ nav a:hover {
   color: #bc3030;
 }
 
-@media (min-width: 992px) {
+@media (hover: hover) {
   nav {
     display: initial;
   }
@@ -314,7 +314,7 @@ footer ul li {
 
 @media (min-width: 992px) {
   .projectThumbnail {
-    width: 30%;
+    width: 48%;
     margin: 0;
   }
   .projectThumbnail ul li {
@@ -351,6 +351,12 @@ footer ul li {
   }
   .projectThumbnail:hover .overlay {
     opacity: 1;
+  }
+}
+
+@media (min-width: 1440px) {
+  .projectThumbnail {
+    width: 30%;
   }
 }
 
@@ -412,6 +418,7 @@ footer ul li {
 
 .skillsList .itemLevel {
   float: right;
+  white-space: nowrap;
   -webkit-transform: translate(0.5rem, -1.6rem);
           transform: translate(0.5rem, -1.6rem);
   display: var(--display);
@@ -430,7 +437,7 @@ footer ul li {
 
 .skillsList p {
   margin: 0;
-  width: 275px;
+  width: 27.5rem;
   padding: 10px 0 10px 25px;
   white-space: nowrap;
 }

@@ -30,6 +30,14 @@
             gap: 2rem 0;
             height: 100%;
         }
+
+        @include xl{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 2rem 0;
+            height: 100%;
+        }
     }
 }
 
@@ -71,7 +79,7 @@
             ;
         }
 
-        @include lg{
+        @include xl{
             grid-template-areas: 
             "tools hard soft lang"
             "list1   list2   list3   list4"

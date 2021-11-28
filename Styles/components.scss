@@ -27,7 +27,7 @@ nav{
         }
     }
 
-    @include lg {
+    @include hv {
         display: initial;
     }
 }
@@ -245,7 +245,7 @@ footer{
     }
 
     @include lg{
-        width: 30%;
+        width: 48%;
         margin: 0;
         ul{
             li{
@@ -290,6 +290,10 @@ footer{
             }
         }
     }
+
+    @include xl{
+        width: 30%;
+    }
 }
 
 .media{
@@ -328,6 +332,7 @@ footer{
 
     .itemLevel{
         float: right;
+        white-space: nowrap;
         transform: translate(0.5rem, -1.6rem);
         display: var(--display);
         font-size: 1rem;
@@ -345,7 +350,7 @@ footer{
 
     p{
         margin: 0;
-        width: 275px;
+        width: 27.5rem;
         padding: 10px 0 10px 25px;
         white-space: nowrap;
 

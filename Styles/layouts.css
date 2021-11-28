@@ -45,6 +45,20 @@
   }
 }
 
+@media (min-width: 1440px) {
+  #projects .gridWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem 0;
+    height: 100%;
+  }
+}
+
 #bio .gridWrapper {
   display: -ms-grid;
   display: grid;
@@ -65,7 +79,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1440px) {
   #skills .gridWrapper {
         grid-template-areas: "tools hard soft lang" "list1   list2   list3   list4";
   }
