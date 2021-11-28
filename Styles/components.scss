@@ -10,7 +10,6 @@ nav{
     float:right;
     ul{
         direction: rtl;
-        list-style-type: none;
         padding: 0 1rem 0 0;
     }
 
@@ -33,20 +32,26 @@ nav{
 }
 
 footer{
+    margin-top: 2rem;
     padding: 2rem 0.5rem;
+    border-top: 0.2rem solid $prime;
     background-color: $backLight;
     text-align: center;
 
     ul{
         margin: 0 auto;
-        padding: 0;
-        list-style-type: none;
         overflow: hidden;
         width: fit-content;
 
         li{
             float: left;
             margin: 0 2rem;
+        }
+
+        a{
+            &:hover{
+                color: $prime;
+            }
         }
     }
     @include md {
@@ -58,8 +63,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10rem 0 2rem 0;
-    padding: 1rem 0;
+    margin: 0 0 2rem 0;
+    padding: 1rem 3rem;
     white-space: nowrap;
     border-bottom: 0.2rem dashed $primeText;
     h3{
@@ -151,18 +156,24 @@ footer{
     @include cornerBorder;
     margin-bottom: 2rem;
     padding: 0.5rem;
-
-    @include md{
-        width: 70rem;
-    }
+    text-align: center;
 
     .textBackground{
         padding: $h5;
         background-image: url("../IMG/textGrid2x3.svg");
         background-repeat: repeat;
         p{
-            margin: 0.5rem 2rem;
+            margin: 0.5rem 0;
 
+        }
+    }
+
+    @include md{
+        text-align: left;
+        width: 70rem;
+
+        p{
+            margin: 0.5rem 2rem;
         }
     }
 }
@@ -176,9 +187,6 @@ footer{
     }
 
     ul{
-        padding: 0;
-        list-style-type: none;
-
         li{
             float: left;
             color: $prime;
@@ -311,8 +319,6 @@ footer{
 
 .skillsList{
     margin-top: 1.5rem;
-    padding: 0;
-    list-style-type: none;
     
     li{
         @include cornerBorder;

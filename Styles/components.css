@@ -3,13 +3,12 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 40vh;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   float: right;
 }
 
 nav ul {
   direction: rtl;
-  list-style-type: none;
   padding: 0 1rem 0 0;
 }
 
@@ -36,15 +35,15 @@ nav a:hover {
 }
 
 footer {
+  margin-top: 2rem;
   padding: 2rem 0.5rem;
+  border-top: 0.2rem solid #bc3030;
   background-color: #303035;
   text-align: center;
 }
 
 footer ul {
   margin: 0 auto;
-  padding: 0;
-  list-style-type: none;
   overflow: hidden;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -54,6 +53,10 @@ footer ul {
 footer ul li {
   float: left;
   margin: 0 2rem;
+}
+
+footer ul a:hover {
+  color: #bc3030;
 }
 
 @media (min-width: 768px) {
@@ -72,8 +75,8 @@ footer ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 10rem 0 2rem 0;
-  padding: 1rem 0;
+  margin: 0 0 2rem 0;
+  padding: 1rem 3rem;
   white-space: nowrap;
   border-bottom: 0.2rem dashed #f2f2f2;
 }
@@ -157,7 +160,7 @@ footer ul li {
 
 .majorButton a {
   padding: 0 2rem 0.2rem 2rem;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   text-decoration: none;
 }
 
@@ -198,12 +201,7 @@ footer ul li {
   background-repeat: no-repeat;
   margin-bottom: 2rem;
   padding: 0.5rem;
-}
-
-@media (min-width: 768px) {
-  .textField {
-    width: 70rem;
-  }
+  text-align: center;
 }
 
 .textField .textBackground {
@@ -213,7 +211,17 @@ footer ul li {
 }
 
 .textField .textBackground p {
-  margin: 0.5rem 2rem;
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .textField {
+    text-align: left;
+    width: 70rem;
+  }
+  .textField p {
+    margin: 0.5rem 2rem;
+  }
 }
 
 .projectThumbnail {
@@ -224,11 +232,6 @@ footer ul li {
 .projectThumbnail img {
   width: 100%;
   height: auto;
-}
-
-.projectThumbnail ul {
-  padding: 0;
-  list-style-type: none;
 }
 
 .projectThumbnail ul li {
@@ -387,8 +390,6 @@ footer ul li {
 
 .skillsList {
   margin-top: 1.5rem;
-  padding: 0;
-  list-style-type: none;
 }
 
 .skillsList li {

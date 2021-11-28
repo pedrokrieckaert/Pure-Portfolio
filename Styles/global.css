@@ -14,19 +14,6 @@ body {
 
 section {
   margin: 0;
-  min-height: 100vh;
-}
-
-@media (hover: hover) {
-  section {
-    margin: 0 17rem;
-  }
-}
-
-@media (min-width: 1440px) {
-  section {
-    height: 100vh;
-  }
 }
 
 h1 {
@@ -38,11 +25,11 @@ h2 {
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 
 h4 {
-  font-size: 2.6rem;
+  font-size: 2.2rem;
 }
 
 p, figcaption {
@@ -51,5 +38,10 @@ p, figcaption {
 
 a {
   color: #f2f2f2;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
 }
 /*# sourceMappingURL=global.css.map */
