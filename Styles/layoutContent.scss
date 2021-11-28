@@ -1,0 +1,35 @@
+@import "Abstract/theme";
+@import "Abstract/mixin";
+
+section{
+    padding-bottom: 5rem;
+
+    &:not(:first-of-type){
+        background-color: $backLight;
+    }
+
+    .gridWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#landing{
+    text-align: center;
+    h2{margin: 0;}
+
+    ul,p{margin: 0;}
+
+    .gridWrapper{
+        display: grid;
+        justify-content: stretch;
+        gap: 2rem;
+        grid-template-areas: 
+        "res"
+        "client"
+        "deliver"
+        "colab"
+        ;
+    }
+}

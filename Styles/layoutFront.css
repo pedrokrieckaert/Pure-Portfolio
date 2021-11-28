@@ -1,3 +1,19 @@
+section {
+  min-height: 100vh;
+}
+
+@media (hover: hover) {
+  section {
+    margin: 0 17rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  section {
+    height: 100vh;
+  }
+}
+
 #landing {
   background-image: url("../IMG/triGrid3.svg");
   background-repeat: no-repeat;
@@ -132,4 +148,4 @@
   -ms-grid-column: 1;
   grid-area: list4;
 }
-/*# sourceMappingURL=layouts.css.map */
+/*# sourceMappingURL=layoutFront.css.map */
