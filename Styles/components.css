@@ -201,12 +201,7 @@ footer ul a:hover {
   background-repeat: no-repeat;
   margin-bottom: 2rem;
   padding: 0.5rem;
-}
-
-@media (min-width: 768px) {
-  .textField {
-    width: 70rem;
-  }
+  text-align: center;
 }
 
 .textField .textBackground {
@@ -216,7 +211,17 @@ footer ul a:hover {
 }
 
 .textField .textBackground p {
-  margin: 0.5rem 2rem;
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .textField {
+    text-align: left;
+    width: 70rem;
+  }
+  .textField p {
+    margin: 0.5rem 2rem;
+  }
 }
 
 .projectThumbnail {

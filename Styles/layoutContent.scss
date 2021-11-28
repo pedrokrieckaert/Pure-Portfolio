@@ -8,6 +8,11 @@ section{
         background-color: $backLight;
     }
 
+    li{
+        font-size: 1.6rem;
+        padding-bottom: 1rem;
+    }
+
     .gridWrapper{
         display: flex;
         flex-direction: column;

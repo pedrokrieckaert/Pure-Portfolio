@@ -6,6 +6,11 @@ section:not(:first-of-type) {
   background-color: #303035;
 }
 
+section li {
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+
 section .gridWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
