@@ -96,7 +96,6 @@ section .gridWrapper {
   #landing {
     background-image: url("../IMG/New UI filtered 2.png");
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
     height: 70rem;
   }
