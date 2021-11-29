@@ -21,17 +21,13 @@ section .gridWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2rem;
+  gap: 0.5rem;
 }
 
 @media (hover: hover) {
   section {
     margin: 0 17rem;
   }
-}
-
-a:hover {
-  color: #bc3030;
 }
 
 #landing {
@@ -91,6 +87,7 @@ a:hover {
 
 @media (min-width: 768px) {
   #landing .gridWrapper {
+    gap: 0;
         grid-template-areas: "res colab" "client deliver";
   }
 }
@@ -101,7 +98,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 50rem;
+    height: 70rem;
   }
   #landing h1 {
     padding: 10rem 0 0 0;

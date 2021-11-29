@@ -16,7 +16,7 @@ section{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        gap: 0.5rem;
     }
 
     @include hv{
@@ -24,11 +24,6 @@ section{
     }
 }
 
-a{
-    &:hover{
-        color: $prime;
-    }
-}
 
 #landing{
     text-align: center;
@@ -74,6 +69,7 @@ a{
 
     @include md{
         .gridWrapper{
+            gap: 0;
             grid-template-areas: 
             "res colab"
             "client deliver"
@@ -86,7 +82,7 @@ a{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height: 50rem;
+        height: 70rem;
 
         h1{padding: 10rem 0 0 0;}
         

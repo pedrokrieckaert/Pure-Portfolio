@@ -62,13 +62,23 @@ footer{
 .header{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     margin: 0 0 2rem 0;
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
     white-space: nowrap;
     border-bottom: 0.2rem dashed $primeText;
     h3{
         margin: 0;
+
+        &::before{
+            content: "";
+            display: inline-block;
+            background-image: url("../IMG/triDownRed.svg");
+            width: 2rem;
+            height: 2rem;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
     }
     p{
         display: none;
@@ -76,17 +86,7 @@ footer{
     }
     @include lg {
         justify-content: space-between;
-        h3{
-            &::before{
-                content: "";
-                display: inline-block;
-                background-image: url("../IMG/triDownRed.svg");
-                width: 2rem;
-                height: 2rem;
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
-        }
+        padding: 1rem 3rem;
 
         p{
             display: initial
@@ -113,7 +113,8 @@ footer{
     border-bottom: 0.2rem dashed $primeText;
     background-color: $backLight;
     width: fit-content;
-    margin: 0 auto;
+    margin: 0 auto 2rem;
+    transition: 0.3s;
 
     button{
         padding: $h5 4rem;
@@ -122,9 +123,9 @@ footer{
     }
 
     a{
-        padding: 0 2rem 0.2rem 2rem;
         font-size: $h3;
         text-decoration: none;
+        transition: 0.3s;
 
     }
 
@@ -135,12 +136,17 @@ footer{
             border-bottom: 0.4rem solid $prime;
         }
     }
+
+    @include hv{
+        a{padding: 0 2rem 0.2rem 2rem;}
+    }
 }
 
 .minorButton{
     padding: 0.5rem 4rem;
     background-color: $backLight;
     border: none;
+    border: dashed 0.1rem $subText;
     border-left: solid 0.3rem $primeText;
     border-right: solid 0.3rem $primeText;
     a{
@@ -154,7 +160,6 @@ footer{
 
 .textField{
     @include cornerBorder;
-    margin-bottom: 2rem;
     padding: 0.5rem;
     text-align: center;
 
@@ -229,7 +234,7 @@ footer{
     .projectName{
         margin: 1rem 0 1rem 0;
         padding: 0 1.5rem;
-        background-color: $prime;
+        background: $primeGradient;
         background-clip: content-box;
         border-left: 0.2rem solid $primeText;
         border-right: 0.2rem solid $primeText;
@@ -305,15 +310,19 @@ footer{
 }
 
 .media{
-    margin: 2rem 0 0 0;
-    img{
+    img,iframe{
         @include cornerBorder;
         padding: 0.5rem;
         width: calc(100% - 1.4rem);
         height: auto;
-        @include md{
-            width: 70rem;
-        }
+    }
+
+    margin: 0 0 2rem 0;
+
+    @include md{
+        img,iframe{width: 70rem;}
+
+        iframe{height: 40rem;}
     }
 }
 
