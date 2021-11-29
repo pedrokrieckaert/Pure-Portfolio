@@ -230,6 +230,7 @@ footer ul a:hover {
   .textField {
     text-align: left;
     width: 70rem;
+    margin: 0 auto;
   }
   .textField p {
     margin: 0.5rem 2rem;
