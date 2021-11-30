@@ -144,18 +144,20 @@ footer{
 
 .minorButton{
     padding: 0;
-    background-color: $backLight;
+    height: 4rem;
+    background: $primeGradient;
     border: none;
     border: dashed 0.1rem $subText;
     border-left: solid 0.3rem $primeText;
     border-right: solid 0.3rem $primeText;
     a{
         text-decoration: none;
-        padding: 0.5rem 4rem;
+        padding: 0 4rem;
     }
 
     &:hover{
-        background: $primeGradient;
+        background: transparent;
+        background-color: $backLight;
     }
 }
 
@@ -236,10 +238,11 @@ footer{
     .projectName{
         margin: 1rem 0 1rem 0;
         padding: 0 1.5rem;
-        background: $primeGradient;
+        color: $prime;
+        background-color: $primeText;
         background-clip: content-box;
-        border-left: 0.2rem solid $primeText;
-        border-right: 0.2rem solid $primeText;
+        border-left: 0.2rem solid $prime;
+        border-right: 0.2rem solid $prime;
         text-align: center;
 
         h4{
@@ -249,6 +252,7 @@ footer{
     }
 
     .textField{
+        background: transparent;
         margin: 1rem 0;
         padding: 0;
         width: fit-content;
@@ -260,10 +264,9 @@ footer{
     }
 
     @include lg{
-        width: 48%;
         margin: 0;
 
-        img{height: 25vh;}
+        img{height: 50vh;}
 
         ul{
             li{
@@ -309,11 +312,7 @@ footer{
         }
     }
 
-    @include xl{
-        width: 30%;
 
-        img{height: 30vh;}
-    }
 }
 
 .media{

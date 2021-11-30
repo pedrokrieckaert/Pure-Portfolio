@@ -5,11 +5,11 @@ section{
     min-height: 100vh;
 
     @include hv{
-        margin:0 17rem;
+        margin:0 15rem;
     }
 
-    @include xl {
-        height: 100vh;
+    @include rwd(1942){
+        width: initial;
     }
 }
 
@@ -25,7 +25,6 @@ section{
     background-position: center;
     text-align: center;
     box-shadow: 0 0 1rem 1rem $back inset;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,21 +40,10 @@ section{
 
 #projects{
     .gridWrapper{
-        @include lg{
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 2rem 0;
-            height: 100%;
-        }
-
-        @include xl{
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 2rem 0;
-            height: 100%;
-        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
     }
 }
 
@@ -97,7 +85,7 @@ section{
             ;
         }
 
-        @include xl{
+        @include rwd(1600){
             grid-template-areas: 
             "tools hard soft lang"
             "list1   list2   list3   list4"
