@@ -15,8 +15,11 @@ section {
 }
 
 @media (min-width: 992px) {
+  section {
+    padding-top: 10rem;
+  }
   .header {
-    margin: 10rem 0 2rem 0;
+    margin: 0 0 2rem 0;
   }
 }
 
@@ -69,26 +72,42 @@ section {
 #bio .gridWrapper {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "bio" "text1" "exp" "text2" "text3" "button";
+      grid-template-areas: "bio"
+ "text1"
+ "exp"
+ "text2"
+ "text3"
+ "button";
   justify-items: center;
 }
 
 #skills .gridWrapper {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "tools" "list1" "hard" "list2" "soft" "list3" "lang" "list4";
+      grid-template-areas: "tools"
+ "list1"
+ "hard"
+ "list2"
+ "soft"
+ "list3"
+ "lang"
+ "list4";
   justify-items: center;
 }
 
 @media (min-width: 768px) {
   #skills .gridWrapper {
-        grid-template-areas: "tools lang" "list1 list4" "hard soft" "list2 list3";
+        grid-template-areas: "tools lang"
+ "list1 list4"
+ "hard soft"
+ "list2 list3";
   }
 }
 
 @media (min-width: 1600px) {
   #skills .gridWrapper {
-        grid-template-areas: "tools hard soft lang" "list1   list2   list3   list4";
+        grid-template-areas: "tools hard soft lang"
+ "list1   list2   list3   list4";
   }
 }
 

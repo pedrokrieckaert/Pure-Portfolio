@@ -3,31 +3,64 @@
 @import "Abstract/mixin";
 
 nav{
-    display: none;
     position: sticky;
-    top: 40vh;
-    font-size: $h3;
-    float:right;
-    ul{
-        direction: rtl;
-        padding: 0 1rem 0 0;
-    }
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: $backLight;
 
-    li{
-        margin: $h5 0;
-        width: fit-content;
-        cursor: pointer;
-    }
-
-    a{
+    .logolink {
+        display: block;
+        color: var(--t-fg);
+        font-size: 1.4rem;
         text-decoration: none;
-        &:hover{
+    }
+    .link {
+        color: var(--t-subdue);
+        display: block;
+        margin-left: 1rem;
+        text-decoration: none;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
+        
+        &:hover,&:focus {
             color: $prime;
         }
     }
 
-    @include hv {
-        display: initial;
+    .monogram {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.5rem;
+        color: $prime;
+        font-weight: 900;
+        letter-spacing: -0.125rem;
+        border: 3px solid currentColor;
+        border-radius: 50%;
+    }
+    .social {
+        display: block;
+        margin-left: auto;
+    }
+    .social + .social {
+        margin-left: 0.75rem;
+    }
+    .socialicon {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        fill: var(--t-subdue);
+        transition: fill linear 150ms;
+    }
+    .socialicon:hover {
+        fill: $prime;
     }
 }
 
