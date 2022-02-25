@@ -5,23 +5,20 @@
 html{
     font-size: 62.5%;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body{
     margin: 0;
     padding: 0;
-    font: 400 $h4 Arial, sans-serif;
+    font-family: 'Overpass', sans-serif;
     color: $primeText;
     background-color: $back;
 }
 
 section{
     margin: 0;
-    min-height: 100vh;
-    @include md {
-        margin:0 17rem;
-        height: 100vh;
-    }
+    padding-top: 6rem;
 }
 
 h1{
@@ -40,10 +37,36 @@ h4{
     font-size: $h3;
 }
 
+h1,h2,h3,h4,a{
+    font-family: 'Share Tech Mono', monospace;
+}
+
 p, figcaption{
     font-size: $h5;
 }
 
 a{
     color: $primeText;
+}
+
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 1rem;
+    background: $primeGradient;
+
+    &:hover{
+        background: $subText;
+    }
 }

@@ -17,8 +17,8 @@
 
 $screen-sm-min: 576px; //landscape view
 $screen-md-min: 768px; //portrait view
-$screen-lg-min: 992px;
-$screen-xl-min: 1200px;
+$screen-lg-min: 992px; //landscape tabled view
+$screen-xl-min: 1440px; //Laptops
 
 //small - phone portrait
 @mixin sm {
@@ -51,7 +51,14 @@ $screen-xl-min: 1200px;
 //custom
 @mixin rwd($screen) {
   @media (min-width: #{$screen+'px'}){
-    @content
+    @content;
   }
   
+}
+
+//device can hover
+@mixin hv {
+  @media (hover: hover) {
+    @content;
+  }
 }

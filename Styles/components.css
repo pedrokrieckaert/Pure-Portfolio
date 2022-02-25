@@ -1,50 +1,92 @@
 nav {
-  display: none;
   position: -webkit-sticky;
   position: sticky;
-  top: 40vh;
-  font-size: 2.6rem;
-  float: right;
+  top: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 2rem;
+  background-color: #303035;
 }
 
-nav ul {
-  direction: rtl;
-  list-style-type: none;
-  padding: 0 1rem 0 0;
-}
-
-nav li {
-  margin: 1.6rem 0;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  cursor: pointer;
-}
-
-nav a {
+nav .logolink {
+  display: block;
+  color: var(--t-fg);
+  font-size: 1.4rem;
   text-decoration: none;
 }
 
-nav a:hover {
+nav .link {
+  color: var(--t-subdue);
+  display: block;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+nav .link:hover, nav .link:focus {
   color: #bc3030;
 }
 
-@media (min-width: 992px) {
-  nav {
-    display: initial;
-  }
+nav .monogram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  color: #bc3030;
+  font-weight: 900;
+  letter-spacing: -0.125rem;
+  border: 3px solid currentColor;
+  border-radius: 50%;
+}
+
+nav .social {
+  display: block;
+  margin-left: auto;
+}
+
+nav .social + .social {
+  margin-left: 0.75rem;
+}
+
+nav .socialicon {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  fill: var(--t-subdue);
+  -webkit-transition: fill linear 150ms;
+  transition: fill linear 150ms;
+}
+
+nav .socialicon:hover {
+  fill: #bc3030;
 }
 
 footer {
+  margin-top: 2rem;
   padding: 2rem 0.5rem;
+  border-top: 0.2rem solid #bc3030;
   background-color: #303035;
   text-align: center;
 }
 
 footer ul {
   margin: 0 auto;
-  padding: 0;
-  list-style-type: none;
   overflow: hidden;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -54,6 +96,10 @@ footer ul {
 footer ul li {
   float: left;
   margin: 0 2rem;
+}
+
+footer ul a:hover {
+  color: #bc3030;
 }
 
 @media (min-width: 768px) {
@@ -69,10 +115,12 @@ footer ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 10rem 0 2rem 0;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin: 0 0 2rem 0;
+  padding: 1rem 1rem;
+  white-space: nowrap;
   border-bottom: 0.2rem dashed #f2f2f2;
 }
 
@@ -80,16 +128,27 @@ footer ul li {
   margin: 0;
 }
 
+.header h3::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../IMG/triDownRed.svg");
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .header p {
   display: none;
   font-style: italic;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 1rem 3rem;
   }
   .header p {
     display: initial;
@@ -129,25 +188,28 @@ footer ul li {
   background-size: 1.5rem 1.5rem;
   background-origin: border-box;
   background-repeat: no-repeat;
+  border-top: 0.2rem dashed #f2f2f2;
+  border-bottom: 0.2rem dashed #f2f2f2;
   background-color: #303035;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .majorButton button {
   padding: 1.6rem 4rem;
   border: none;
-  border-top: 0.2rem dashed #f2f2f2;
-  border-bottom: 0.2rem dashed #f2f2f2;
   background-color: transparent;
 }
 
 .majorButton a {
-  padding: 0 2rem 0.2rem 2rem;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .majorButton:hover {
@@ -158,21 +220,31 @@ footer ul li {
   border-bottom: 0.4rem solid #bc3030;
 }
 
+@media (hover: hover) {
+  .majorButton a {
+    padding: 0 2rem 0.2rem 2rem;
+  }
+}
+
 .minorButton {
-  padding: 0.5rem 4rem;
-  background-color: #303035;
+  padding: 0;
+  height: 4rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#802121), color-stop(25%, #bc3030), color-stop(75%, #bc3030), to(#802121));
+  background: linear-gradient(180deg, #802121 0%, #bc3030 25%, #bc3030 75%, #802121 100%);
   border: none;
+  border: dashed 0.1rem #a2a2a2;
   border-left: solid 0.3rem #f2f2f2;
   border-right: solid 0.3rem #f2f2f2;
 }
 
 .minorButton a {
   text-decoration: none;
+  padding: 0 4rem;
 }
 
 .minorButton:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#802121), color-stop(25%, #bc3030), color-stop(75%, #bc3030), to(#802121));
-  background: linear-gradient(180deg, #802121 0%, #bc3030 25%, #bc3030 75%, #802121 100%);
+  background: transparent;
+  background-color: #303035;
 }
 
 .textField {
@@ -185,14 +257,8 @@ footer ul li {
   background-size: 1.5rem 1.5rem;
   background-origin: border-box;
   background-repeat: no-repeat;
-  margin-bottom: 2rem;
   padding: 0.5rem;
-}
-
-@media (min-width: 768px) {
-  .textField {
-    width: 70rem;
-  }
+  text-align: center;
 }
 
 .textField .textBackground {
@@ -202,7 +268,22 @@ footer ul li {
 }
 
 .textField .textBackground p {
-  margin: 0.5rem 2rem;
+  margin: 0.5rem 0;
+}
+
+.textField ul {
+  font-size: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .textField {
+    text-align: left;
+    width: 70rem;
+    margin: 0 auto;
+  }
+  .textField p {
+    margin: 0.5rem 2rem;
+  }
 }
 
 .projectThumbnail {
@@ -213,11 +294,6 @@ footer ul li {
 .projectThumbnail img {
   width: 100%;
   height: auto;
-}
-
-.projectThumbnail ul {
-  padding: 0;
-  list-style-type: none;
 }
 
 .projectThumbnail ul li {
@@ -276,10 +352,11 @@ footer ul li {
 .projectThumbnail .projectName {
   margin: 1rem 0 1rem 0;
   padding: 0 1.5rem;
-  background-color: #bc3030;
+  color: #bc3030;
+  background-color: #f2f2f2;
   background-clip: content-box;
-  border-left: 0.2rem solid #f2f2f2;
-  border-right: 0.2rem solid #f2f2f2;
+  border-left: 0.2rem solid #bc3030;
+  border-right: 0.2rem solid #bc3030;
   text-align: center;
 }
 
@@ -289,6 +366,7 @@ footer ul li {
 }
 
 .projectThumbnail .textField {
+  background: transparent;
   margin: 1rem 0;
   padding: 0;
   width: -webkit-fit-content;
@@ -303,8 +381,10 @@ footer ul li {
 
 @media (min-width: 992px) {
   .projectThumbnail {
-    width: 30%;
     margin: 0;
+  }
+  .projectThumbnail img {
+    height: 50vh;
   }
   .projectThumbnail ul li {
     width: 10rem;
@@ -314,7 +394,7 @@ footer ul li {
     position: absolute;
     top: 0.7rem;
     left: 0.7rem;
-    height: 100%;
+    height: auto;
     width: calc(100% - 1.4rem);
     opacity: 0;
   }
@@ -327,6 +407,8 @@ footer ul li {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 95%;
     height: 95%;
   }
@@ -342,10 +424,10 @@ footer ul li {
 }
 
 .media {
-  margin: 2rem 0 0 0;
+  margin: 0 0 2rem 0;
 }
 
-.media img {
+.media img, .media iframe {
   /* thickness */
   /* color */
   /* width */
@@ -361,15 +443,16 @@ footer ul li {
 }
 
 @media (min-width: 768px) {
-  .media img {
+  .media img, .media iframe {
     width: 70rem;
+  }
+  .media iframe {
+    height: 40rem;
   }
 }
 
 .skillsList {
   margin-top: 1.5rem;
-  padding: 0;
-  list-style-type: none;
 }
 
 .skillsList li {
@@ -399,6 +482,7 @@ footer ul li {
 
 .skillsList .itemLevel {
   float: right;
+  white-space: nowrap;
   -webkit-transform: translate(0.5rem, -1.6rem);
           transform: translate(0.5rem, -1.6rem);
   display: var(--display);
@@ -417,7 +501,7 @@ footer ul li {
 
 .skillsList p {
   margin: 0;
-  width: 275px;
+  width: 27.5rem;
   padding: 10px 0 10px 25px;
   white-space: nowrap;
 }

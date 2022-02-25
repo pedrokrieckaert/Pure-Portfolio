@@ -1,0 +1,94 @@
+@import "Abstract/theme";
+@import "Abstract/mixin";
+
+section{
+    padding-bottom: 5rem;
+
+    &:not(:first-of-type){
+        background-color: $backLight;
+    }
+
+    li{
+        padding-bottom: 1rem;
+    }
+
+    .gridWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    @include hv{
+        margin:0 17rem;
+    }
+}
+
+
+#landing{
+    text-align: center;
+    background-image: url("../IMG/triGrid3.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    h1{margin:  0 0 3rem 0;}
+
+    h2{margin: 0;}
+
+    ul,p{
+        margin: 0;
+        font-size: 2.2rem;
+    }
+
+    .gridWrapper{
+        display: grid;
+        justify-content: stretch;
+        gap: 2rem;
+        grid-template-areas: 
+        "res"
+        "client"
+        "deliver"
+        "colab"
+        ;
+    }
+
+    #res{
+        grid-area: res;
+    }
+
+    #client{
+        grid-area: client;
+    }
+    #deliver{
+        grid-area: deliver;
+    }
+    #colab{
+        grid-area: colab;
+    }
+
+    @include md{
+        .gridWrapper{
+            gap: 0;
+            grid-template-areas: 
+            "res colab"
+            "client deliver"
+            ;
+        }
+    }
+
+    @include lg{
+        background-image: url("../IMG/New\ UI\ filtered\ 2.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 70rem;
+
+        h1{padding: 10rem 0 0 0;}
+        
+        .gridWrapper{
+            grid-template-areas: 
+            "res client deliver colab"
+            ;
+        }
+    }
+}

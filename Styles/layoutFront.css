@@ -1,3 +1,31 @@
+section {
+  min-height: 100vh;
+}
+
+@media (hover: hover) {
+  section {
+    margin: 0 15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section {
+    padding-top: 10rem;
+  }
+}
+
+@media (min-width: 1942px) {
+  section {
+    width: initial;
+  }
+}
+
+@media (min-width: 992px) {
+  .header {
+    margin: 0 0 2rem 0;
+  }
+}
+
 #landing {
   background-image: url("../IMG/triGrid3.svg");
   background-repeat: no-repeat;
@@ -5,7 +33,6 @@
   text-align: center;
   -webkit-box-shadow: 0 0 1rem 1rem #222 inset;
           box-shadow: 0 0 1rem 1rem #222 inset;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,6 +58,27 @@
       align-self: flex-start;
 }
 
+#projects .gridWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+#bio .gridWrapper {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "bio" "text1" "exp" "text2" "text3" "button";
+  justify-items: center;
+}
+
 #skills .gridWrapper {
   display: -ms-grid;
   display: grid;
@@ -40,6 +88,12 @@
 
 @media (min-width: 768px) {
   #skills .gridWrapper {
+        grid-template-areas: "tools lang" "list1 list4" "hard soft" "list2 list3";
+  }
+}
+
+@media (min-width: 1600px) {
+  #skills .gridWrapper {
         grid-template-areas: "tools hard soft lang" "list1   list2   list3   list4";
   }
 }
@@ -48,6 +102,24 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: tools;
+}
+
+#skills .subHeader:nth-of-type(2) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: hard;
+}
+
+#skills .subHeader:nth-of-type(3) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: soft;
+}
+
+#skills .subHeader:nth-of-type(4) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: lang;
 }
 
 #skills .skillsList:nth-of-type(1) {
@@ -73,4 +145,4 @@
   -ms-grid-column: 1;
   grid-area: list4;
 }
-/*# sourceMappingURL=layouts.css.map */
+/*# sourceMappingURL=layoutFront.css.map */

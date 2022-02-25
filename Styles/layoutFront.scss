@@ -1,13 +1,34 @@
 @import "Abstract/theme";
 @import "Abstract/mixin";
 
+section{
+    min-height: 100vh;
+
+    @include hv{
+        margin:0 15rem;
+    }
+
+    @include lg{
+        padding-top: 10rem;
+    }
+
+    @include rwd(1942){
+        width: initial;
+    }
+}
+
+.header{
+    @include lg{
+        margin: 0 0 2rem 0;
+    }
+}
+
 #landing{
     background-image: url("../IMG/triGrid3.svg");
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
     box-shadow: 0 0 1rem 1rem $back inset;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,6 +39,30 @@
 
     .majorButton{
         align-self: flex-start;
+    }
+}
+
+#projects{
+    .gridWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+#bio{
+    .gridWrapper{
+        display: grid;
+        grid-template-areas: 
+        "bio"
+        "text1"
+        "exp"
+        "text2"
+        "text3"
+        "button"
+        ;
+        justify-items: center;
     }
 }
 
@@ -34,7 +79,17 @@
         "lang"
         "list4"
         ;
+
         @include md{
+            grid-template-areas: 
+            "tools lang"
+            "list1 list4"
+            "hard soft"
+            "list2 list3"
+            ;
+        }
+
+        @include rwd(1600){
             grid-template-areas: 
             "tools hard soft lang"
             "list1   list2   list3   list4"
@@ -47,6 +102,18 @@
     .subHeader{
         &:nth-of-type(1){
             grid-area: tools;
+        }
+
+        &:nth-of-type(2){
+            grid-area: hard;
+        }
+
+        &:nth-of-type(3){
+            grid-area: soft;
+        }
+
+        &:nth-of-type(4){
+            grid-area: lang;
         }
         
     }
