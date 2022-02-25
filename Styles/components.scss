@@ -209,6 +209,10 @@ footer{
         }
     }
 
+    ul{
+        font-size: 1.6rem;
+    }
+
     @include md{
         text-align: left;
         width: 70rem;
